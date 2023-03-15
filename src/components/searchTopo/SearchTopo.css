@@ -1,0 +1,9 @@
+.SearchTopo{
+    display: flex;
+    background: var(--cinza1);
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
