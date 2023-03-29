@@ -9,7 +9,7 @@ const UserProfile = () => {
         <div className="UserProfile">
          <SearchTopo/>
          <PerfilPage/>
-         
+         <Post/>
         </div>
     )
 
