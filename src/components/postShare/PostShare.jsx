@@ -7,21 +7,22 @@ import {UilTimes} from "@iconscout/react-unicons";
 import './PostShare.css'
 const PostShare = () => {
   
-  const [isOverflowHidden, setIsOverflowHidden] = useState(false);
+  //const [isOverflowHidden, setIsOverflowHidden] = useState(false);
   const [show, setShow] = useState(false);
+  const [image, setImage] = useState(null);
+  const imageRef = useRef();
   
-  const naoScroll = () => {
+  /*const naoScroll = () => {
     setIsOverflowHidden(true);
     document.body.style.overflow = 'hidden';
   };
   
-  const [image, setImage] = useState(null);
-  const imageRef = useRef();
+  
   
   const handleClick = () => {
-    naoScroll();
+    //naoScroll();
     setShow(true);
-  };
+  };*/
   
 
   const onImageChange = (event) => {
@@ -62,9 +63,7 @@ const PostShare = () => {
       </div>
 }
 
-      <button type="button"  style={{
-          overflowY: isOverflowHidden ? "hidden" : "auto",
-        }} className="btnShare" onClick={handleClick} >+</button>
+      <button type="button"   className="btnShare" onClick={()=> setShow(!show)} >+</button>
        
         </div>
         

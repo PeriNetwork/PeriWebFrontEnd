@@ -1,0 +1,21 @@
+.notification {
+    margin: auto;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--grey);
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    font-family: "Inter";
+  }
+  
+  #userName {
+    font-weight: 800;
+    padding: 10px;
+  }
+  
+  #notificationText {
+    padding: 10px;
+  }

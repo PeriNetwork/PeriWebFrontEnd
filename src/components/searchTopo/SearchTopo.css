@@ -1,9 +1,18 @@
-.SearchTopo{
+nav {
+    background: var(--grey);
+    width: 100%;
+  }
+  
+  ul {
     display: flex;
-    background: var(--cinza1);
-    height: 3rem;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
+    justify-content: space-between;
+  }
+  
+  .centerIcons {
+    display: flex;
+  }
+  
+  li {
+    padding: 10px;
+  }
+  

@@ -1,4 +1,6 @@
-
+/*style={{
+    overflowY: isOverflowHidden ? "hidden" : "auto",
+  }}*/
 .btnShare{
     border-radius: 50%;
     background-color: var(--vermelho2);
@@ -16,9 +18,6 @@
     transition: text 2s;*/
 }
 
-.corpo>.PostShare{
-    overflow: hidden;
-}
 
 .btnShare:hover, .btnShare:target{
    /* background-color: var(--vermelho1);*/
@@ -30,22 +29,19 @@
 }
 
 .PostShare{
+    margin-top: 25px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -30%;
-    border: 1px solid blue;
     gap: 1rem;
     background-color: var(--cinza1);
     padding: 1rem;
     border-radius: 1rem;
     width: 60%;
-    overflow: hidden;
 }
 
 .PostShare>img{
     border-radius: 50%;
-    
     width: 3rem;
     height: 3rem;
 }
