@@ -10,8 +10,8 @@ const UserProfile = () => {
         <div className="UserProfile">
          <SearchTopo/>
          <PerfilPage/>
-         <Post/>
          <PostShare/>
+         <Post/>
         </div>
     )
 

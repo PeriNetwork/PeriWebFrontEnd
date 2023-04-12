@@ -6,24 +6,9 @@ import {UilTimes} from "@iconscout/react-unicons";
 
 import './PostShare.css'
 const PostShare = () => {
-  
-  //const [isOverflowHidden, setIsOverflowHidden] = useState(false);
-  const [show, setShow] = useState(false);
+
   const [image, setImage] = useState(null);
   const imageRef = useRef();
-  
-  /*const naoScroll = () => {
-    setIsOverflowHidden(true);
-    document.body.style.overflow = 'hidden';
-  };
-  
-  
-  
-  const handleClick = () => {
-    //naoScroll();
-    setShow(true);
-  };*/
-  
 
   const onImageChange = (event) => {
     if(event.target.files && event.target.files[0]){
@@ -34,8 +19,7 @@ const PostShare = () => {
     }
   };
     return (
-        <div className="PostShareBtn">
-      { show &&
+        <div className="PostShareBtn" >
       <div className="PostShare">
       <img src={userImg} alt="" />
       <div>
@@ -61,13 +45,14 @@ const PostShare = () => {
           )}
         </div>
       </div>
-}
 
-      <button type="button"   className="btnShare" onClick={()=> setShow(!show)} >+</button>
        
+
         </div>
         
     )
+
+    
 
 }
 

@@ -4,7 +4,7 @@ import homePeri from "./iconsNav/homePeri.png";
 import bellPeri from "./iconsNav/bell.svg";
 import createPeri from "./iconsNav/create.png";
 import searchPeri from "./iconsNav/search.png";
-import userPeri from "./iconsNav/user.png";
+import userPeri from "../../img/userimg.png";
 
 import './SearchTopo.css'
 
@@ -40,7 +40,7 @@ export default function searchTopo() {
           <div className="rightIcons">
             <li>
               <a href="#">
-                <img src={userPeri} alt="user" width={36} height={36} />
+                <img src={userPeri} className="user" alt="user" width={36} height={36} />
               </a>
             </li>
           </div>

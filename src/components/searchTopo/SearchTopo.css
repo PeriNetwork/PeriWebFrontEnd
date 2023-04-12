@@ -1,6 +1,13 @@
+body{margin:0;
+}
+
 nav {
-    background: var(--grey);
+    background: var(--preto);
     width: 100%;
+    position: fixed; 
+    top: 0; 
+    overflow: hidden;
+    z-index: 5;
   }
   
   ul {
@@ -16,3 +23,6 @@ nav {
     padding: 10px;
   }
   
+  .user{
+    border-radius: 50%;
+  }

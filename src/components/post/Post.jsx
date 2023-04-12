@@ -4,7 +4,8 @@ import './Post.css'
 import Postagem from "../postagem/Postagem";
 const Post = ({data}) => {
     return (
-        <div className="Post">
+        <div className="Post" >
+
          {ProfileFeed.map((post, id)=>{
             return <Postagem data={post} id={id}/>
          })}
