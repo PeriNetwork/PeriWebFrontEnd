@@ -1,12 +1,13 @@
 import React from "react";
 import { useState, useRef } from "react";
 import logo from "./img/Peri.jpg";
-import "./textstyle.css";
-
+import "./Cadastro.css";
+import { Link } from "react-router-dom";
 function Cadastro() {
   const [state, setState] = useState(false);
-  let url = "./Login";
+  
   return (
+    <div className="bg1">
     <div className="form-container">
       <div className="header">
         <img src={logo} alt="Logo da Rede Social" />
@@ -50,8 +51,9 @@ function Cadastro() {
       </form>
 
       <p>
-        Já possui uma conta? Faça login <a href={url}>aqui</a>.
+        Já possui uma conta? Faça login <Link to={"/login"}>aqui</Link>.
       </p>
+    </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import homePeri from "./iconsNav/homePeri.png";
 import bellPeri from "./iconsNav/bell.svg";
 import createPeri from "./iconsNav/create.png";
@@ -15,33 +15,33 @@ export default function searchTopo() {
         <ul>
           <div className="leftIcons">
             <li>
-              <a href="#">
-                <img src={homePeri} alt="home" width={36} height={36} />
-              </a>
+              <Link to={"/login"}>
+                <img src={homePeri} alt="home" width={50}/>
+                </Link>
             </li>
           </div>
           <div className="centerIcons">
             <li>
-              <a href="/notification/Notification">
-                <img src={bellPeri} alt="bell" width={36} height={36} />
+              <Link to={"/notificacoes"}>
+                <img src={bellPeri} alt="bell" width={50} />
+                </Link>
+            </li>
+            <li>
+              <a href="#">
+                <img src={createPeri} alt="create" width={36}  />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src={createPeri} alt="create" width={36} height={36} />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src={searchPeri} alt="search" width={36} height={36} />
+                <img src={searchPeri} alt="search" width={36} />
               </a>
             </li>
           </div>
           <div className="rightIcons">
             <li>
-              <a href="#">
-                <img src={userPeri} className="user" alt="user" width={36} height={36} />
-              </a>
+              <Link to={"/user"}>
+                <img src={userPeri} className="user" alt="user" width={50}  />
+                </Link>
             </li>
           </div>
         </ul>

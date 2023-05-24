@@ -9,7 +9,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
-    /*z-index: -1;*/
+    z-index: -1;
 }
 
 .userDados{
@@ -49,6 +49,7 @@
 .content{
     display: flex;
     flex-direction: row; 
+    margin-left: 1rem;
 }
 
 #img{
@@ -83,11 +84,13 @@
 
 .descricao>span{
     font-size: 1.1rem;
+    
 }
 
 .likes{
     font-style: italic;
 }
+
 
 
 

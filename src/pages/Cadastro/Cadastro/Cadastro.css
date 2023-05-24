@@ -1,42 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
-body {
+.bg1 {
   margin: 0;
-  padding: 0;
+  padding-top: 6rem;
   background-image: url("./img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Poppins", sans-serif;
   color: white;
-  margin-top: 15rem;
+  margin-top: 5rem;
+ 
 }
 
-.login-form {
-  width: 400px;
+.form-container {
+  max-width: 500px;
+  padding: 20px;
   background-color: rgb(0, 0, 0, 0.5);
-  padding: 30px;
+  box-shadow: 0px 2px 10px rgba(69, 66, 66, 0.3);
+  border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 5px;
-  box-shadow: 0px 2px 10px rgba(69, 66, 66, 0.3);
+  
 }
 
-.logo {
+.header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.logo img {
+img {
   height: 50px;
-  margin-right: 10px;
+  margin-left: 50px;
   border-radius: 50px;
 }
 
 h1 {
   margin: 0;
   color: #e70909;
+  padding-left: 25px;
 }
 
 form {
@@ -44,13 +46,20 @@ form {
   flex-direction: column;
 }
 
-input[type="text"],
-input[type="password"] {
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="file"] {
   margin-bottom: 20px;
-  padding: 10px;
+}
+
+input:not([type="file"]) {
+  padding: 5px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  border: none;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 button[type="submit"] {
@@ -60,17 +69,14 @@ button[type="submit"] {
   padding: 10px;
   border: none;
   border-radius: 5px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
-/*.social-btn {
-	margin-right: 10px;
+p {
+  margin-top: 20px;
+  text-align: center;
 }
-/*
-button[type="submit"]:hover,
-.social-btn:hover {
-	background: #666;
-}*/
 
 a {
   color: #e70909;

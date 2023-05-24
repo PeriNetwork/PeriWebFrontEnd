@@ -1,9 +1,15 @@
-body{margin:0;
+.navBar{
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-    background: var(--preto);
+    background: black;
     width: 100%;
+    margin: 0;
+    padding: 0;
     position: fixed; 
     top: 0; 
     overflow: hidden;

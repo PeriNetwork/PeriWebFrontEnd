@@ -1,5 +1,7 @@
 import userPeri from "../../components/searchTopo/iconsNav/user.png";
 
+import "./Notificacao.css";
+
 export default function Notification() {
   return (
     <>

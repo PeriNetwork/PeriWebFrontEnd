@@ -2,41 +2,45 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding-top: 6rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.bg {
   background-image: url("./img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  margin-top: 5rem;
+  background-position: center;
+  height: 100vh;
 }
 
-.form-container {
-  max-width: 500px;
-  padding: 20px;
-  background-color: rgb(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 10px rgba(69, 66, 66, 0.3);
-  border-radius: 5px;
+.login-form {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(69, 66, 66, 0.3);
 }
 
-.header {
+.logo {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
-img {
+.logo img {
   height: 50px;
-  margin-left: 50px;
+  margin-right: 10px;
   border-radius: 50px;
 }
 
 h1 {
   margin: 0;
   color: #e70909;
-  padding-left: 25px;
 }
 
 form {
@@ -44,20 +48,13 @@ form {
   flex-direction: column;
 }
 
-label {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-input[type="file"] {
+input[type="text"],
+input[type="password"] {
   margin-bottom: 20px;
-}
-
-input:not([type="file"]) {
-  padding: 5px;
-  border: 1px solid #ccc;
+  padding: 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  border: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 button[type="submit"] {
@@ -67,14 +64,17 @@ button[type="submit"] {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  margin-top: 10px;
   cursor: pointer;
 }
 
-p {
-  margin-top: 20px;
-  text-align: center;
+/*.social-btn {
+	margin-right: 10px;
 }
+/*
+button[type="submit"]:hover,
+.social-btn:hover {
+	background: #666;
+}*/
 
 a {
   color: #e70909;

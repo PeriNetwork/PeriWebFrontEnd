@@ -13,6 +13,8 @@ const PerfilPage = () => {
 
         </div>
 
+        <div className="profile">
+
         <div className="profileName">
             <span>Alissa</span>
             <span>@AlissaArt</span>
@@ -30,7 +32,7 @@ const PerfilPage = () => {
 
 
         </div>
-
+        </div>
 </div>
     )
 

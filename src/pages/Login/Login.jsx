@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "./img/Peri.jpg";
-import "./style.css";
-
+import "./Login.css";
+import { Link } from "react-router-dom";
 function LoginForm() {
   return (
+    <div className="bg">
     <div className="login-form">
       <div className="logo">
         <img src={logo} alt="Peri Logo" />
@@ -15,10 +16,12 @@ function LoginForm() {
         <button type="submit">Entrar</button>
         <p>
           Não tem uma conta no Peri?{" "}
-          <a href="cadastro.html">Junte-se a nós e Cadastre-se aqui</a>
+          <Link to={"/cadastro"}> Junte-se a nós e Cadastre-se aqui</Link>
         </p>
       </form>
     </div>
+    </div>
+    
   );
 }
 
