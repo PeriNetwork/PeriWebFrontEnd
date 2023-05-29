@@ -15,7 +15,7 @@ export default function searchTopo() {
         <ul>
           <div className="leftIcons">
             <li>
-              <Link to={"/login"}>
+              <Link to={"/home"}>
                 <img src={homePeri} alt="home" width={50}/>
                 </Link>
             </li>

@@ -18,28 +18,29 @@ function Cadastro() {
 
       <form>
         <label htmlFor="first-name">Nome:</label>
-        <input type="text" id="first-name" name="first-name" required />
+        <input type="text" id="first-name" name="first-name" className="inputTxt" required />
 
         <label htmlFor="last-name">Sobrenome:</label>
-        <input type="text" id="last-name" name="last-name" required />
+        <input type="text" id="last-name" name="last-name" className="inputTxt" required />
 
         <label htmlFor="birthdate">Data de Nascimento:</label>
-        <input type="date" id="birthdate" name="birthdate" required />
+        <input type="date" id="birthdate" name="birthdate" className="inputTxt" required />
 
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input type="email" id="email" name="email" className="inputTxt" required />
 
         <label htmlFor="password">Senha:</label>
-        <input type="password" id="password" name="password" required />
+        <input type="password" id="password" name="password" className="inputTxt" required />
 
         <label htmlFor="username">Nome de Usuário:</label>
-        <input type="text" id="username" name="username" required />
+        <input type="text" id="username" name="username" className="inputTxt" required />
 
         <label htmlFor="profile-name">Nome do Perfil:</label>
-        <input type="text" id="profile-name" name="profile-name" required />
+        <input type="text" id="profile-name" name="profile-name" className="inputTxt" required />
 
         <label htmlFor="profile-pic">Foto de Perfil:</label>
         <input
+        className="inputImg"
           type="file"
           id="profile-pic"
           name="profile-pic"
@@ -51,7 +52,7 @@ function Cadastro() {
       </form>
 
       <p>
-        Já possui uma conta? Faça login <Link to={"/login"}>aqui</Link>.
+        Já possui uma conta? Faça login <Link to={"/"}>aqui</Link>.
       </p>
     </div>
     </div>

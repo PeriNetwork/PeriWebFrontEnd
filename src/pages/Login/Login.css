@@ -5,15 +5,21 @@ body {
   padding-top: 6rem;
   font-family: "Poppins", sans-serif;
   color: white;
+  /*background-image: url("./img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;*/
+  background-color: black;
+  height: 100vh;
 }
 
-.bg {
+/*.bg {
   background-image: url("./img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
-}
+}*/
 
 .login-form {
   width: 400px;
@@ -48,8 +54,7 @@ form {
   flex-direction: column;
 }
 
-input[type="text"],
-input[type="password"] {
+.inputTxt {
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 5px;

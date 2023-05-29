@@ -1,6 +1,8 @@
-import feedPost1 from '../img/feedProfile1.jpg'
-import PerfilPfp from '../img/pfp1.jpg'
-import PerfilPfp2 from '../img/pfp2.jpg'
+import feedPost1 from '../img/feedProfile1.jpg';
+import feedPost2 from '../img/tucano.jpg';
+import PerfilPfp from '../img/pfp1.jpg';
+import PerfilPfp2 from '../img/pfp2.jpg';
+import PerfilPfp3 from '../img/pfp3.png';
 
 export const ProfileFeed = [
     {
@@ -25,7 +27,16 @@ export const ProfileFeed = [
         liked: false
     },
 
-  
+    {
+        userImg: PerfilPfp3,
+        name: 'usuario707',
+        username: '@user707',
+        conteudo: feedPost2,
+        imagem: true,
+        descricao: 'Minha nova fotografia enquanto observava aves',
+        likes: 455,
+        liked: false
+    },
 
 ]
 
