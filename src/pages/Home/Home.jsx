@@ -6,7 +6,9 @@ import NavBar from "../../components/searchTopo/SearchTopo";
 import { FaSearch } from "react-icons/fa";
 const Home = () => {
     return (
-    <div className="Home" >  
+      
+    <div className="Home" > 
+     <NavBar/> 
     <div className="input-wrapper">
       <FaSearch id="search-icon" 
       />
@@ -15,7 +17,6 @@ const Home = () => {
       />
     </div>
         <PostShare/>
-        <NavBar/>
         <Post/>
         </div>
     )

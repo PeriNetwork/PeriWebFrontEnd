@@ -38,7 +38,7 @@ function LoginForm() {
   return (
     <div className="bg">
     <div className="login-form">
-      <div className="logo">
+      <div className="logoLogin">
         <img src={logo} alt="Peri Logo" />
         <h1>Bem-vinde ao Peri</h1>
       </div>
