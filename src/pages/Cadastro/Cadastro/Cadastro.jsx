@@ -5,7 +5,7 @@ import "./Cadastro.css";
 import { Link } from "react-router-dom";
 function Cadastro() {
   const [state, setState] = useState(false);
-  
+
   return (
     <div className="bg1">
     <div className="form-container">
@@ -39,13 +39,15 @@ function Cadastro() {
         <input type="text" id="profile-name" name="profile-name" className="inputTxt" required />
 
         <label htmlFor="profile-pic">Foto de Perfil:</label>
-        <input
+        
+        <input  
         className="inputImg"
           type="file"
           id="profile-pic"
           name="profile-pic"
           accept="image/*"
           required
+          
         />
 
         <button type="submit">Cadastrar</button>
