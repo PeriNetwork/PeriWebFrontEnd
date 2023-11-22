@@ -1,4 +1,4 @@
-# Peri API
+# Peri WEB
 
 ## Como preparar o ambiente de desenvolvimento ?
 
